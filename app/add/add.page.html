@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        <ion-img justify-content-center align-items-center style="width: 100%; height: 60px;" src="/assets/logodehype.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+    <ion-item>
+        <ion-label position="floating"> Item Name </ion-label>
+        <ion-input type="text" [(ngModel)]="shoppingCart.ProductName"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+          <ion-label position="floating"> Item Brand </ion-label>
+          <ion-input type="text" [(ngModel)]="shoppingCart.ProductBrand"></ion-input>
+        </ion-item>
+      
+    
+      <ion-item>
+          <ion-label position= "floating" > Number </ion-label>
+          <ion-input type="number" [(ngModel)]="shoppingCart.ProductNumber"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label position= "floating" > Price </ion-label>
+            <ion-input type="number" [(ngModel)]="shoppingCart.ProductPrice"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+          <ion-input class="input_image"type="file" accept="image/*" (click)=" addImage()" 
+           [(ngModel)]="shoppingCart.ProductImage"></ion-input>
+        </ion-item>
+    
+        <ion-button type="block" (click)="addShoppingItem(shoppingCart)"> Add Item </ion-button>
+
+</ion-content>

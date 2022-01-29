@@ -1,0 +1,132 @@
+<ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>
+        <ion-img justify-content-center align-items-center style="width: 100%; height: 60px;" src="/assets/logo2.png"></ion-img>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>  
+
+<ion-content padding>
+
+    <ion-slides class="banner" #slide (ionSlidesDidLoad)="slidesDidLoad(slide)"
+    autoplay="1000" loop="true" speed="200" pager="true">
+    
+      <ion-slide *ngFor="let slide of slides">
+    
+        
+      <img [src]="slide.img">
+    
+      <ion-row>
+      <ion-col size="10" offset="1">
+    </ion-col>
+    </ion-row>
+    </ion-slide>
+    </ion-slides>
+
+  
+ 
+  <ion-grid>
+  <ion-row row-1>
+
+    <ion-col col-6>
+
+        <ion-card-content >
+        
+            <ion-label text-wrap>
+                <h4>NIKE</h4>
+                <h3>AIR MAX 720</h3>
+                <p>COP $ 530000</p>
+              </ion-label>
+            </ion-card-content>
+
+
+
+            
+
+
+    </ion-col>
+
+    <ion-col col-6>
+      
+  
+        <ion-button expand="full"  mode="ios" (click)="signin()"  color="dark" fill="solid" >
+            <ion-icon  slot="start" name="md-cart"></ion-icon>
+          <ion-label> COMPRAR</ion-label>
+        </ion-button>
+    
+
+
+<ion-button expand="full"  mode="ios" (click)="signin()"  color="dark" fill="outline">
+                <ion-list>
+                    <ion-item lines="none" >
+                      <ion-label>Talla</ion-label>
+                      <ion-select  mode="ios" value="brown" okText="Ok" cancelText="Cancelar">
+                        <ion-select-option value="8.5">8.5</ion-select-option>
+                        <ion-select-option value="9">9</ion-select-option>
+                        <ion-select-option value="9.5">9.5</ion-select-option>
+                        <ion-select-option value="10">10</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                  </ion-list>
+                </ion-button>
+
+<ion-button expand="full"  mode="ios" (click)="signin()"  color="dark" fill="outline">
+                  <ion-list>
+                      <ion-item lines="none">
+                        <ion-label>Unidades</ion-label>
+                        <ion-select mode="ios" value="brown" okText="Ok" cancelText="Cancelar">
+                          <ion-select-option value="1">1</ion-select-option>
+                          <ion-select-option value="2">2</ion-select-option>
+                          <ion-select-option value="3">3</ion-select-option>
+                          <ion-select-option value="4">4</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+                    </ion-list>
+</ion-button>
+                  
+  </ion-col> 
+                          
+         
+
+  </ion-row>
+</ion-grid>
+
+<ion-card-content  >
+        
+    <ion-label text-wrap>
+        <h4>Tambien te puede interesar</h4>
+      </ion-label>
+    </ion-card-content>
+
+
+
+
+<ion-grid>
+  
+    <ion-row row-1>
+      <ion-col>
+          <ion-card>
+              <h6>AIR MAX 90</h6>
+              <ion-card-content>
+                  <ion-img  src="/assets/Shoes/s3.jpg"></ion-img>
+              </ion-card-content>
+            </ion-card>
+
+      </ion-col>
+
+      <ion-col >
+      
+          <ion-card>
+              <h6>YEEZY V2 CLAY</h6>
+          <ion-card-content>
+              <ion-img  src="/assets/Shoes/s5.jpg"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+
+

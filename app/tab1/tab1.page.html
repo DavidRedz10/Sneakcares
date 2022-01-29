@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      <ion-img justify-content-center align-items-center style="width: 100%; height: 60px;" src="/assets/logo2.png"></ion-img>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content content-wrapper>
+  
+  
+<ion-slides class="banner" #slide (ionSlidesDidLoad)="slidesDidLoad(slide)"
+autoplay="1000" loop="true" speed="200" pager="true">
+
+  <ion-slide *ngFor="let slide of slides">
+
+    
+  <img [src]="slide.img">
+
+  <ion-row>
+  <ion-col size="10" offset="1">
+</ion-col>
+</ion-row>
+</ion-slide>
+</ion-slides>
+
+<ion-list>
+
+  <ion-item lines="none" class="best-sellers" *ngFor="let shoppingCart of bestSellerList$ | async ">
+      
+      <ion-thumbnail slot="start">
+        <img [src]="shoppingCart.ProductImage">
+      </ion-thumbnail>
+      <ion-label text-wrap>
+          <h4>{{shoppingCart.ProductBrand}}</h4>
+        <h3>{{shoppingCart.ProductName}}</h3>
+        <p color="danger">COP $ {{shoppingCart.ProductPrice}}</p>
+      </ion-label>
+      <ion-icon name="cart" slot="end"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+     
+
+
+      <ion-fab (click)="Compra()" vertical="bottom" horizontal="center" slot="fixed">
+          <ion-fab-button color="danger">
+            <ion-icon name="heart"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+      
+        <ion-grid>
+            <ion-row row-1>
+              <ion-col>
+
+                      <ion-card-content>
+                          <ion-img src="/assets/Minicio.png"></ion-img>
+                      </ion-card-content>
+
+        
+              </ion-col>
+        
+              <ion-col >
+
+                  <ion-card-content>
+                      <ion-img src="/assets/hinicio.png"></ion-img>
+                  </ion-card-content>
+ 
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        
+
+        
+        
+</ion-content>
+

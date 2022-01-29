@@ -1,0 +1,130 @@
+ion-toolbar{
+  width: auto;
+  height: 65px; 
+  display: flex;
+  align-items: center;
+}
+
+img{
+  height: auto !important;
+  width: 180px;
+max-height: 400px; 
+}
+
+h4{
+  font-size: 16px;
+  color: #616161;
+}
+
+h3{
+  font-size: 16px;
+  color: #9E9E9E ;
+}
+
+ion-thumbnail{
+  width: 110px !important; 
+  height : auto !important;
+}
+
+.ion-color-gray{
+  --ion-color-base: #616161;
+  --ion-color-base-rgb: 97,97,97;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255,255,255;
+  --ion-color-shade: #424242;
+  --ion-color-tint: #616161;
+}
+
+.ion-color-verdebuy{
+  --ion-color-base: #8BC34A;
+  --ion-color-base-rgb: 139,195,74;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255,255,255;
+  --ion-color-shade: #689F38;
+  --ion-color-tint: #8BC34A;
+}
+
+h6 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.best-sellers p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color:#b71c1c ;
+}
+
+p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+ion-item {
+  justify-content: center;
+display: grid;
+ align-items: center;
+}
+
+.headerBackground {
+  background-image: url("/assets/canguro.png");
+  width: auto !important;
+  height: 500px !important;  
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-origin: border-box; 
+  background-size: cover;
+  background-position: center top;
+  
+  }
+
+.headerBackground2 ion-card-content{
+    background-image: url("/assets/cahqueta.png");
+    width: auto !important;
+    height: 500px !important;  
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: border-box; 
+    background-size: cover;
+    background-position: center top;
+
+        }
+
+
+    .slide_button {
+      margin-bottom: 60px;
+    }
+
+    ion-slide{
+      display: block;
+    }
+
+    .buy_button{
+      background: none;
+    }
+
+
+    .banner img{
+
+      width: 410px !important; 
+      height : auto !important;
+
+    }
+    ion-slides{
+      --bullet-background-active: none;
+      --bullet-background: none;
+    }
+
+    ion-thumbnail{
+      width: 110px !important; 
+      height : auto !important;
+    }
+
+    @media screen and (max-height: 400px){
+      img{
+        width: 70%
+      }
+    }
